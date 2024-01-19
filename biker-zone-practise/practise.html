@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biker Zone</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "header-bg": "#264653",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header class="text-white bg-header-bg">
+      <nav class="container mx-auto">
+        <div class="navbar bg-header-bg">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li><a>Shop</a></li>
+                <li><a>News</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 mr-20">
+              <li><a>Home</a></li>
+              <li><a>Shop</a></li>
+              <li><a>News</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+            <a class="btn btn-error">Button</a>
+          </div>
+          <div class="navbar-end lg:hidden">
+            <a class="btn btn-error">Button</a>
+          </div>
+        </div>
+      </nav>
+      <!-- HEADER SECTION -->
+      <section>
+        <div class="hero min-h-screen">
+          <div class="hero-content flex-col lg:flex-row-reverse">
+            <img
+              src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
+              class="max-w-sm rounded-lg shadow-2xl"
+            />
+            <div class="lg:pb-40 lg:w-2/3 lg:pt-20 lg:px-20">
+              <p class="text-sm text-gray-400">
+                Computer-controlled digital transistorized with electronic
+                advance
+              </p>
+              <h1 class="text-5xl font-bold">Box Office News!</h1>
+              <p class="py-6">
+                Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                assumenda excepturi exercitationem quasi. In deleniti eaque aut
+                repudiandae et a id nisi.
+              </p>
+              <button class="btn btn-error">Get Started</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="container mx-auto">
+        <h2 class="text-5xl text-center mt-12">Fetured Bikes In This Year</h2>
+        <p class="text-sm text-orange-600 text-center mb-6">
+          Best bike collection
+        </p>
+        <!-- bike display -->
+        <div class="flex flex-col lg:flex-row gap-4 mb-4">
+          <!-- BIKE 1 CART -->
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure>
+              <img src="../images/others/latest1.png" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Ducati XDIAVEL S-73</h2>
+              <p class="text-gray-500">
+                If a dog chews shoes whose shoes does he choose?
+              </p>
+              <div class="card-actions justify-start">
+                <button class="btn btn-outline btn-error">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- BIKE 1 CART -->
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure>
+              <img src="../images/others/latest1.png" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Ducati XDIAVEL S-73</h2>
+              <p class="text-gray-500">
+                If a dog chews shoes whose shoes does he choose?
+              </p>
+              <div class="card-actions justify-start">
+                <button class="btn btn-outline btn-error">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- BIKE 1 CART -->
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure>
+              <img src="../images/others/latest1.png" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Ducati XDIAVEL S-73</h2>
+              <p class="text-gray-500">
+                If a dog chews shoes whose shoes does he choose?
+              </p>
+              <div class="card-actions justify-start">
+                <button class="btn btn-outline btn-error">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
