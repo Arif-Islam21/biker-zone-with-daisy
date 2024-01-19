@@ -11,20 +11,6 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <!-- customised css by tailwind css -->
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: "#da373d",
-              "bike-primary-bg": "rgba(231, 111, 81, 0.10)",
-              "bike-primary": "#E76F51",
-            },
-          },
-        },
-      };
-    </script>
     <!-- random style given by raw css -->
     <style>
       .font-poppins {
@@ -38,6 +24,19 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "bike-primary-bg": "rgba(231, 111, 81, 0.10)",
+              "bike-primary": "#E76F51",
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body class="font-poppins">
     <header>
@@ -71,7 +70,7 @@
                 <li><a>Contact</a></li>
               </ul>
             </div>
-            <a class="btn btn-ghost text-4xl">Biker Zone</a>
+            <a class="btn btn-ghost text-xl lg:text-4xl">Biker Zone</a>
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
@@ -88,11 +87,29 @@
           </div>
         </div>
       </nav>
+    </header>
+    <main class="container md:mx-auto">
       <!-- slider or caurosol -->
-      <div class="carousel w-full bg-bike-primary-bg">
+      <div class="carousel lg:h-[550px] w-full bg-bike-primary-bg">
         <!-- slider 1 -->
         <div id="slide1" class="carousel-item relative w-full">
-          <img src="images/slider/bike1.png" class="w-full" />
+          <div class="flex flex-col lg:flex-row p-6 md:p-24">
+            <div class="space-y-4 text-center lg:text-start flex-1">
+              <h2 class="text-2xl lg:text-6xl font-bold">
+                Ride ON R15 V4 <br />
+                With Smile
+              </h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Exercitationem delectus voluptatibus quisquam qui quos,
+                recusandae praesentium eaque expedita molestias quaerat?
+              </p>
+              <button class="btn bg-bike-primary text-white">Purchase</button>
+            </div>
+            <div class="flex-1">
+              <img src="images/slider/bike1.png" class="w-3/4" />
+            </div>
+          </div>
           <div
             class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
           >
@@ -101,7 +118,23 @@
           </div>
         </div>
         <div id="slide2" class="carousel-item relative w-full">
-          <img src="images/slider/bike2.png" class="w-full" />
+          <div class="flex flex-col lg:flex-row p-6 md:p-24">
+            <div class="space-y-4 text-center lg:text-start flex-1">
+              <h2 class="text-2xl lg:text-6xl font-bold">
+                Ride ON R15 V4 <br />
+                With Smile
+              </h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Exercitationem delectus voluptatibus quisquam qui quos,
+                recusandae praesentium eaque expedita molestias quaerat?
+              </p>
+              <button class="btn bg-bike-primary text-white">Purchase</button>
+            </div>
+            <div class="flex-1">
+              <img src="images/slider/bike2.png" class="w-3/4" />
+            </div>
+          </div>
           <div
             class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
           >
@@ -110,7 +143,23 @@
           </div>
         </div>
         <div id="slide3" class="carousel-item relative w-full">
-          <img src="images/slider/bike3.png" class="w-full" />
+          <div class="flex flex-col lg:flex-row p-6 md:p-24">
+            <div class="space-y-4 text-center lg:text-start flex-1">
+              <h2 class="text-2xl lg:text-6xl font-bold">
+                Ride ON R15 V4 <br />
+                With Smile
+              </h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Exercitationem delectus voluptatibus quisquam qui quos,
+                recusandae praesentium eaque expedita molestias quaerat?
+              </p>
+              <button class="btn bg-bike-primary text-white">Purchase</button>
+            </div>
+            <div class="flex-1">
+              <img src="images/slider/bike3.png" class="w-3/4" />
+            </div>
+          </div>
           <div
             class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
           >
@@ -119,7 +168,23 @@
           </div>
         </div>
         <div id="slide4" class="carousel-item relative w-full">
-          <img src="images/slider/bike4.png" class="w-full" />
+          <div class="flex flex-col lg:flex-row p-6 md:p-24">
+            <div class="space-y-4 text-center lg:text-start flex-1">
+              <h2 class="text-2xl lg:text-6xl font-bold">
+                Ride ON R15 V4 <br />
+                With Smile
+              </h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Exercitationem delectus voluptatibus quisquam qui quos,
+                recusandae praesentium eaque expedita molestias quaerat?
+              </p>
+              <button class="btn bg-bike-primary text-white">Purchase</button>
+            </div>
+            <div class="flex-1">
+              <img src="images/slider/bike4.png" class="w-3/4" />
+            </div>
+          </div>
           <div
             class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
           >
@@ -128,6 +193,129 @@
           </div>
         </div>
       </div>
-    </header>
+
+      <section>
+        <!-- featured bike section -->
+      </section>
+      <!-- latest news section -->
+      <section class="my-24">
+        <h3 class="text-3xl text-center font-bold mb-5">Latest Bikes</h3>
+        <!-- FIRST CARD -->
+        <div class="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div class="card w-96 lg:w-80 bg-base-100 shadow-xl">
+            <figure>
+              <img src="images/others/latest1.png" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-3xl">Ducati XDIAVEL S-73</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab
+                ratione nihil quo, suscipit animi modi!
+              </p>
+              <div class="card-actions uppercase">
+                <button class="btn bg-bike-primary text-white">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+        <!-- SECOND CARD -->
+          <div class="card w-96 lg:w-80 bg-base-100 shadow-xl">
+            <figure>
+              <img src="images/others/latest2.png" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-3xl">Ducati XDIAVEL S-73</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab
+                ratione nihil quo, suscipit animi modi!
+              </p>
+              <div class="card-actions uppercase">
+                <button class="btn bg-bike-primary text-white">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+        <!-- THIRD CARD -->
+          <div class="card w-96 lg:w-80 bg-base-100 shadow-xl">
+            <figure>
+              <img src="images/others/latest3.png" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-3xl">Ducati XDIAVEL S-73</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab
+                ratione nihil quo, suscipit animi modi!
+              </p>
+              <div class="card-actions uppercase">
+                <button class="btn bg-bike-primary text-white">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+      </section>
+      <!-- HAPPY CLIENTS SECTION -->
+      <section class="my-24">
+        <h3 class="text-5xl mb-12 font-semibold text-center">Happy <span class="text-bike-primary">Clients Says</span></h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <!-- FIRST REVIEW -->
+          <div class="card p-9 bg-base-100 border-2 border-gray-500">
+            <figure><img class="w-36" src="images/others/user-1.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <p>Lorem ipsum dolor sit  Blanditiis unde quisquam repellat sit ipsam.</p>
+              <div class="rating justify-center">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <div class="text-center space-y-4 mt-4">
+                <h4 class="text-sm font-semibold text-info">Rejina Millet</h4>
+                <p>Banker</p>
+              </div>
+            </div>
+          </div>
+          <!-- SECOND REVIEW -->
+          <div class="card p-9 bg-base-100 border-2 border-gray-500">
+            <figure><img class="w-36" src="images/others/user-2.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <p>Lorem ipsum dolor sit Blanditiis unde quisquam repellat sit ipsam.</p>
+              <div class="rating justify-center">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <div class="text-center space-y-4 mt-4">
+                <h4 class="text-sm font-semibold text-info">Rejina Millet</h4>
+                <p>Banker</p>
+              </div>
+            </div>
+          </div>
+          <!-- THIRD REVIEW -->
+          <div class="card p-9 bg-base-100 border-2 border-gray-500">
+            <figure><img class="w-36" src="images/others/user-3.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <p>Lorem ipsum dolor sit Blanditiis unde quisquam repellat sit ipsam.</p>
+              <div class="rating justify-center">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <div class="text-center space-y-4 mt-4">
+                <h4 class="text-sm font-semibold text-info">Rejina Millet</h4>
+                <p>Banker</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
